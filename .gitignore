@@ -1,0 +1,6 @@
+/target
+.env
+
+# Google token
+client_secret.json
+tokencache.json

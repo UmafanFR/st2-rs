@@ -1,0 +1,77 @@
+[18/01/26 04:10:05] ERROR st2_rs: Error in command `post`: "Invalid link"
+[18/01/26 04:12:14] ERROR st2_rs: Error in command `post`: "Invalid link"
+[18/01/26 04:16:24] ERROR st2_rs: Error in command `post`: "dazd is an invalid link"
+[18/01/26 04:17:08] ERROR st2_rs: Error in command `post`: "`fezf` is an invalid link"
+[18/01/26 04:18:07] ERROR st2_rs: Error in command `post`: "`fzef` is an invalid link"
+[18/01/26 05:26:48]  INFO st2_rs: A1 value: [[String("AAA")]]
+[18/01/26 05:27:01]  INFO st2_rs: A1 updated!
+[18/01/26 05:27:02]  INFO st2_rs: A1 new value: [[String("Hello from Rust!")]]
+[18/01/26 05:29:03]  INFO st2_rs: A1 value: [[String("Hello from Rust!")]]
+[18/01/26 05:29:10]  INFO st2_rs: A1 updated!
+[18/01/26 05:29:10]  INFO st2_rs: A1 new value: [[String("Hello from Rust!")]]
+[18/01/26 05:29:47]  INFO st2_rs: A1 value: [[String("Hello from Rust!")]]
+[18/01/26 05:29:48]  INFO st2_rs: A1 updated!
+[18/01/26 05:29:49]  INFO st2_rs: A1 new value: [[String("Hello from Rust!")]]
+[18/01/26 05:40:55] DEBUG st2_rs: [".", "Admire Groove", "Admire Vega", "Agnes Digital", "Agnes Tachyon", "Air Groove", "Air Messiah", "Air Shakur", "Almond Eye", "Amagi Happiness", "Aston Machan", "Bamboo Memory", "Belno Light", "Believe", "Bethe Sugar", "Biko Pegasus", "Biwa Hayahide", "Black Ale", "Blast Onepiece", "Bright Rock", "Bubble Gum Fellow", "Buena Vista", "Calstone Light O", "Carrie’s Room", "Cesario", "Cheval Grand", "Clarizza", "Chrono Genesis", "Copano Rickey", "Curren Bouquetd’or", "Curren Chan", "Daiichi Ruby", "Daitaku Helios", "Daiwa Scarlet", "Dantsu Flame", "Daring Heart", "Daring Tact", "Dicta Striker", "Dream Journey", "Dynamu Heroine", "Dynamu Painter", "Duramente", "Durandal", "Eishin Flash", "El Condor Pasa", "Ellerslie Pride", "Eve Binti", "Espoir City", "Faith No More", "Fenomeno", "Fine Motion", "Folkqueen", "Fujimasa March", "Fuji Kiseki", "Fumino Nase", "Furioso", "Fusaichi Pandora", "Ginjirou Musaka", "God Hannibal", "Gentildonna", "Gold City", "Gold Ship", "Gorou Akeishi", "Gran Alegria", "Grass Wonder", "Haru Urara", "Hiyori Kawamura", "Hishi Akebono", "Hishi Amazon", "Hishi Miracle", "Hokko Tarumae", "Ikuno Dictus", "Inari One", "Ines Fujin", "Jo Kitahara", "Jungle Pocket", "K.S.Miracle", "Katsuragi Ace", "Kawakami Princess", "Kiseki", "Kitasan Black", "Loves Only You", "Lucky Lilac", "Long Live Free", "Lord Royal", "Luna Swallow", "Manhattan Cafe", "Maruzensky", "Masami Komiyama", "Marvelous Sunday", "Matikanefukukitaru", "Matikanetannhauser", "Mayano Top Gun", "Meisho Doto", "Mejiro Ardan", "Mejiro Bright", "Mejiro Dober", "Mejiro McQueen", "Mejiro Palmer", "Mejiro Ramonu", "Mejiro Ryan", "Merry Beauty", "Meteor Selenus", "Michelle My Baby", "Mihono Bourbon", "Mini the Lady", "Miss Armagnac", "Mr. C.B.", "Nakayama Festa", "Narita Brian", "Narita Taishin", "Narita Top Road", "Neo Universe", "Nice Nature", "Nishino Flower", "No Reason", "North Flight", "Oguri Cap", "Obey Your Master", "Okan Maker", "Orfevre", "Red Desire", "Rhein Kraft", "Rice Shower", "Romance Bubbly", "Royce and Royce", "Run to the Top", "Sakura Bakushin O", "Sakura Chitose O", "Sakura Chiyono O", "Sakura Laurel", "Satias", "Satono Crown", "Satono Diamond", "Sekai Touha", "Seiun Sky", "Shinko Windy", "Shirley Sky", "Silence Suzuka", "Sirius Symboli", "Smart Falcon", "Sounds of Earth", "South Heroine", "Special Week", "Stay Gold", "Still in Love", "Super Creek", "Sweep Tosho", "Symboli Kris S", "Symboli Rudolf", "T.M. Opera O", "Taiki Shuttle", "Tamamo Cross", "Tanino Gimlet", "Tap Dance City", "Tokai Teio", "Tosen Jordan", "Transcend", "Tsurumaru Tsuyoshi", "Twin Turbo", "Verxina", "Vivlos", "Vodka", "Walk Dancer", "Win Variation", "Winning Ticket", "Wonder Acute", "Yaeno Muteki", "Yoshino Prevail", "Yukino Bijin", "Yamano Thousand", "Yamanin Zephyr", "Zenno Rob Roy"]
+[18/01/26 05:57:12] ERROR st2_rs: Error in command `follow`: "You are already following **Curren Chan**!"
+[18/01/26 06:00:22] ERROR st2_rs: Error in command `post`: "This command must be used in a server"
+[18/01/26 06:06:48] ERROR st2_rs: Error in command `follow`: "You are already following **Curren Chan**!"
+[18/01/26 06:06:59] ERROR st2_rs: Error in command `post`: "`fezfzef` is an invalid link"
+[18/01/26 06:45:14] ERROR st2_rs: Error in command `follow`: "You are already following **Curren Chan**!"
+[18/01/26 06:46:13] ERROR st2_rs: Error in command `follow` (by whenever_): "You are already following **Curren Chan**!"
+[18/01/26 06:49:44] ERROR st2_rs: Error in command `follow` (by whenever_): "You are already following **Curren Chan**!"
+[18/01/26 06:49:50]  INFO st2_rs: Command follow executed by whenever_
+[18/01/26 06:52:28] ERROR st2_rs: Error in command `/follow umamusume:Admire Groove` (by whenever_): "You are already following **Admire Groove**!"
+[18/01/26 06:52:45]  INFO st2_rs: Command /follow umamusume:Admire Vega executed by whenever_
+[18/01/26 06:54:21]  INFO st2_rs: Command executed (by whenever_): /follow umamusume:Belno Light
+[18/01/26 06:54:30] ERROR st2_rs: Error in command "You are already following **Admire Groove**!" (by whenever_): `/follow umamusume:Admire Groove` 
+[18/01/26 16:54:50]  INFO st2_rs: Command executed (by whenever_): /unfollow umamusume:Belno Light
+[18/01/26 16:55:06]  INFO st2_rs: Command executed (by whenever_): /unfollow umamusume:Curren Chan
+[18/01/26 16:55:16]  INFO st2_rs: Command executed (by whenever_): /follow umamusume:Curren Chan
+[18/01/26 16:55:37] ERROR st2_rs: Error in command "You are already following **Curren Chan**!" (by whenever_): `/follow umamusume:Curren Chan` 
+[18/01/26 16:55:44] ERROR st2_rs: Error in command "You are not following **Air Groove**!" (by whenever_): `/unfollow umamusume:Air Groove` 
+[18/01/26 16:58:10]  INFO st2_rs: Command executed (by whenever_): /follow umamusume:Air Shakur
+[18/01/26 16:58:20]  INFO st2_rs: Command executed (by whenever_): /unfollow umamusume:Air Shakur
+[18/01/26 16:58:27] ERROR st2_rs: Error in command "You are not following **Bamboo Memory**!" (by whenever_): `/unfollow umamusume:Bamboo Memory` 
+[18/01/26 17:00:08]  INFO st2_rs: Command executed (by whenever_): /follow umamusume:curren chan
+[18/01/26 17:01:35] ERROR st2_rs: Error in command "You are already following **Curren Chan**!" (by whenever_): `/follow umamusume:Curren Chan` 
+[18/01/26 17:01:44]  INFO st2_rs: Command executed (by whenever_): /follow umamusume:Almond Eye
+[18/01/26 17:23:51] ERROR st2_rs: Error in command "You are already following **Admire Groove**!" (by whenever_): `/follow umamusume:Admire Groove` 
+[18/01/26 17:29:50]  INFO st2_rs: Command executed (by whenever_):  `/follow umamusume:Amagi Happiness`
+[18/01/26 17:29:57] ERROR st2_rs: Error in command (by whenever_):  `/follow umamusume:Amagi Happiness` (You are already following **Amagi Happiness**!)
+[18/01/26 17:48:04]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Admire Vega post:https://x.com/yuzuki_vtuber/status/2012905507795923402`
+[18/01/26 17:48:29]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Admire Vega post:https://x.com/amanenne_suyapi/status/2012846033752211929`
+[18/01/26 17:49:48]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Agnes Tachyon post:https://x.com/Guttergore1/status/2012749765922984203`
+[18/01/26 17:50:27]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Agnes Tachyon post:https://x.com/DailyMonog1tari/status/2012630350267031575`
+[18/01/26 17:54:33]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Admire Vega post:https://x.com/amanenne_suyapi/status/2012846033752211929`
+[18/01/26 17:59:05]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Admire Vega post:https://x.com/amanenne_suyapi/status/2012846033752211929`
+[18/01/26 17:59:17]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Agnes Tachyon post:https://x.com/DailyMonog1tari/status/2012630350267031575`
+[18/01/26 18:00:09]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Air Shakur post:https://www.pixiv.net/en/artworks/139218536`
+[18/01/26 18:03:01]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Air Messiah post:https://x.com/Dailyumadol/status/2012568178635747463`
+[18/01/26 18:06:19]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Curren Chan post:https://bsky.app/profile/mimytora.bsky.social/post/3mclgibiwl224`
+[18/01/26 18:06:30]  INFO st2_rs: Command executed (by whenever_):  `/follow umamusume:Curren Chan`
+[18/01/26 18:06:40]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Curren Chan post:https://bsky.app/profile/mimytora.bsky.social/post/3mclgibiwl224`
+[18/01/26 18:07:48]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Amagi Happiness post:https://www.instagram.com/p/DTpgEmvEw36/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==`
+[18/01/26 18:08:06]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Bamboo Memory post:https://www.instagram.com/p/DTpgEmvEw36`
+[18/01/26 18:12:26]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Bamboo Memory post:https://www.instagram.com/p/DTpgEmvEw36`
+[18/01/26 18:12:44]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Bethe Sugar post:https://www.instagram.com/reel/DTpXhpqE1WE/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==`
+[18/01/26 18:18:14]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Bethe Sugar post:https://www.instagram.com/reel/DTpXhpqE1WE/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==`
+[18/01/26 18:18:30]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Bethe Sugar post:https://www.instagram.com/reel/DTpXhpqE1WE`
+[18/01/26 18:18:39]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Bamboo Memory post:https://www.instagram.com/p/DTpgEmvEw36`
+[18/01/26 18:25:32]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Bamboo Memory post:https://www.instagram.com/p/DTpgEmvEw36`
+[18/01/26 18:25:49]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Bethe Sugar post:https://www.instagram.com/reel/DTpXhpqE1WE/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==`
+[18/01/26 18:34:32]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Bethe Sugar post:https://www.instagram.com/reel/DTpXhpqE1WE/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==`
+[18/01/26 18:38:18]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Bethe Sugar post:https://www.instagram.com/reel/DTpXhpqE1WE/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==`
+[18/01/26 18:38:50]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Bethe Sugar post:https://www.instagram.com/reel/DTpXhpqE1WE/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==`
+[18/01/26 18:40:37]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Agnes Tachyon post:https://x.com/DailyMonog1tari/status/2012630350267031575`
+[18/01/26 18:40:58]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Curren Chan post:https://x.com/DailyMonog1tari/status/2012630350267031575`
+[18/01/26 19:18:40]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Curren Chan post:https://x.com/DailyMonog1tari/status/2012630350267031575`
+[18/01/26 19:22:53]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Curren Chan post:https://x.com/DailyMonog1tari/status/2012630350267031575`
+[18/01/26 19:26:33]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Curren Chan post:https://x.com/DailyMonog1tari/status/2012630350267031575`
+[18/01/26 19:32:52]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Oguri Cap post:https://x.com/ygodm2/status/2012893709311066381`
+[18/01/26 19:35:24]  INFO st2_rs: Command executed (by whenever_):  `/follow umamusume:Oguri Cap`
+[18/01/26 19:35:39]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Oguri Cap post:https://x.com/ygodm2/status/2012893709311066381`
+[18/01/26 19:52:16] ERROR st2_rs: Error in command (by whenever_):  `/follow umamusume:Curren Chan` (You are already following **Curren Chan**!)
+[18/01/26 20:03:29]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Oguri Cap post:https://x.com/ygodm2/status/2012893709311066381 ping:false`
+[18/01/26 20:03:43]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Oguri Cap post:https://x.com/ygodm2/status/2012893709311066381 ping:true`
+[18/01/26 20:03:50]  INFO st2_rs: Command executed (by whenever_):  `/post umamusume:Oguri Cap post:https://x.com/ygodm2/status/2012893709311066381`
