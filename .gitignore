@@ -1,5 +1,6 @@
 /target
 .env
+st2.log
 
 # Google token
 client_secret.json
