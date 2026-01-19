@@ -5,6 +5,52 @@ use crate::umasheet;
 use serenity::all::{GuildId, MessageBuilder, ReactionType};
 use url::Url;
 
+pub enum Socials {
+    Twitter,
+    Instagram,
+    Reddit,
+    Threads,
+    Pixiv,
+    Bluesky,
+    Bilibili,
+    Other,
+}
+
+impl std::fmt::Display for Socials {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        let s = match self {
+            Socials::Twitter => "X",
+            Socials::Instagram => "Instagram",
+            Socials::Reddit => "Reddit",
+            Socials::Threads => "Threads",
+            Socials::Pixiv => "Pixiv",
+            Socials::Bluesky => "Bluesky",
+            Socials::Bilibili => "Bilibili",
+            Socials::Other => "Source",
+        };
+        write!(f, "{}", s)
+    }
+}
+
+impl From<Url> for Socials {
+    fn from(url: Url) -> Self {
+        let host = url.host_str().unwrap_or("other");
+
+        match host {
+            "twitter" => Socials::Twitter,
+            "x.com" => Socials::Twitter,
+            "instagram" => Socials::Instagram,
+            "reddit" => Socials::Reddit,
+            "thread" => Socials::Threads,
+            "pixiv" => Socials::Pixiv,
+            "bsky" => Socials::Bluesky,
+            "bluesky" => Socials::Bluesky,
+            "bilibli" => Socials::Bilibili,
+            _ => Socials::Other,
+        }
+    }
+}
+
 async fn resolve_mentions(
     ctx: &Context<'_>,
     guild_id: GuildId,
@@ -28,27 +74,6 @@ async fn resolve_mentions(
     mentions
 }
 
-fn get_platform_from_url(url: &Url) -> &'static str {
-    let host = url.host_str().unwrap_or("");
-    if host.contains("twitter") || host.contains("x.com") {
-        "Twitter"
-    } else if host.contains("instagram") {
-        "Instagram"
-    } else if host.contains("reddit") {
-        "Reddit"
-    } else if host.contains("threads") {
-        "Threads"
-    } else if host.contains("pixiv") {
-        "Pixiv"
-    } else if host.contains("bsky") || host.contains("bluesky") {
-        "Bluesky"
-    } else if host.contains("bilibili") {
-        "Bilibili"
-    } else {
-        "Source"
-    }
-}
-
 #[poise::command(slash_command, prefix_command, guild_only)]
 pub async fn post(
     ctx: Context<'_>,
@@ -59,7 +84,7 @@ pub async fn post(
     #[description = "Ping followers"] ping: Option<bool>,
 ) -> Result<(), Error> {
     let url = Url::parse(&post).map_err(|_| format!("`{}` is an invalid link", post))?;
-    let platform = get_platform_from_url(&url);
+    let platform: Socials = url.into();
 
     let guild_id = ctx.guild_id().ok_or("Cannot find guild")?;
 
