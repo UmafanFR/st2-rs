@@ -25,6 +25,19 @@ pub async fn is_already_following(username: &str, uma_name: &str) -> Result<bool
     }))
 }
 
+pub async fn get_user_follow(username: &str) -> Result<Vec<String>, Error> {
+    let members = sheet::sheet()
+        .read("Membres!A:B")
+        .await
+        .map_err(|e| format!("Failed to read sheet: {}", e))?;
+
+    Ok(members
+        .iter()
+        .filter(|row| row.get(0).and_then(|v| v.as_str()).unwrap_or("") == username)
+        .filter_map(|row| row.get(1).and_then(|v| v.as_str()).map(|s| s.to_string()))
+        .collect())
+}
+
 pub async fn get_followers(uma_name: &str) -> Result<Vec<String>, Error> {
     let members = sheet::sheet()
         .read("Membres!A:B")

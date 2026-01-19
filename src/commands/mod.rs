@@ -1,4 +1,6 @@
 mod follow;
+mod help;
+mod myfollow;
 mod post;
 mod unfollow;
 mod update;
@@ -25,6 +27,8 @@ async fn autocomplete_uma_name<'a>(
 }
 
 pub use follow::follow;
+pub use help::help;
+pub use myfollow::myfollow;
 pub use post::post;
 pub use unfollow::unfollow;
 pub use update::update;

@@ -6,7 +6,9 @@ use crate::umasheet;
     prefix_command,
     guild_only,
     ephemeral,
-    required_permissions = "MANAGE_CHANNELS"
+    track_edits,
+    required_permissions = "MANAGE_CHANNELS",
+    category = "Configuration"
 )]
 pub async fn update(ctx: Context<'_>) -> Result<(), Error> {
     umasheet::init_uma_list().await;
