@@ -9,6 +9,7 @@ use crate::umasheet;
     required_permissions = "MANAGE_CHANNELS"
 )]
 pub async fn update(ctx: Context<'_>) -> Result<(), Error> {
+    ctx.defer_ephemeral().await?;
     umasheet::init_uma_list().await;
     ctx.reply("Uma list updated!").await?;
     Ok(())

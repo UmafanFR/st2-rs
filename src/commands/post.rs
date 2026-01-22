@@ -83,6 +83,7 @@ pub async fn post(
     #[description = "Link to post"] post: String,
     #[description = "Ping followers"] ping: Option<bool>,
 ) -> Result<(), Error> {
+    ctx.defer().await?;
     let url = Url::parse(&post).map_err(|_| format!("`{}` is an invalid link", post))?;
     let platform: Socials = url.into();
 

@@ -8,6 +8,7 @@ pub async fn unfollow(
     #[autocomplete = "autocomplete_uma_name"]
     umamusume: String,
 ) -> Result<(), Error> {
+    ctx.defer_ephemeral().await?;
     let username = ctx.author().name.clone();
 
     let range = umasheet::get_follow_range(&username, &umamusume)

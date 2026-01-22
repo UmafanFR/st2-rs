@@ -8,6 +8,7 @@ pub async fn follow(
     #[autocomplete = "autocomplete_uma_name"]
     umamusume: String,
 ) -> Result<(), Error> {
+    ctx.defer_ephemeral().await?;
     let username = ctx.author().name.clone();
 
     if umasheet::is_already_following(&username, &umamusume).await? {

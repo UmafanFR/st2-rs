@@ -21,7 +21,12 @@ async fn on_error(error: poise::FrameworkError<'_, commands::Data, Error>) {
                 .color(Colour::RED);
 
             let reply = poise::CreateReply::default().embed(embed).ephemeral(true);
-            ctx.send(reply).await.expect("Cannot send error message");
+            if let Err(e) = ctx.send(reply).await {
+                log::error!(
+                    "Failed to send error message (interaction may have timed out): {}",
+                    e
+                );
+            }
             log::error!(
                 "Error in command (by {}):  `{}` ({})",
                 ctx.author().name,
