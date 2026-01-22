@@ -1,7 +1,13 @@
 use crate::commands::{Context, Error, autocomplete_uma_name};
 use crate::{sheet, umasheet};
 
-#[poise::command(slash_command, prefix_command, guild_only, ephemeral)]
+#[poise::command(
+    slash_command,
+    prefix_command,
+    guild_only,
+    ephemeral,
+    category = "Umastagram"
+)]
 pub async fn unfollow(
     ctx: Context<'_>,
     #[description = "Umamusume to unfollow"]

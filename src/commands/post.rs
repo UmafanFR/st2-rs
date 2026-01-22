@@ -74,7 +74,7 @@ async fn resolve_mentions(
     mentions
 }
 
-#[poise::command(slash_command, prefix_command, guild_only)]
+#[poise::command(slash_command, prefix_command, guild_only, category = "Umastagram")]
 pub async fn post(
     ctx: Context<'_>,
     #[description = "Umamusume name"]
