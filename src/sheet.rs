@@ -13,18 +13,14 @@ static SHEET: OnceCell<SheetManager> = OnceCell::const_new();
 
 impl SheetManager {
     async fn new(spreadsheet_id: String) -> Self {
-        let secret = yup_oauth2::read_application_secret("client_secret.json")
+        let secret = yup_oauth2::read_service_account_key("client_secret.json")
             .await
             .expect("Cannot read client secret");
 
-        let auth = yup_oauth2::InstalledFlowAuthenticator::builder(
-            secret,
-            yup_oauth2::InstalledFlowReturnMethod::HTTPRedirect,
-        )
-        .persist_tokens_to_disk("tokencache.json")
-        .build()
-        .await
-        .expect("Failed to build authenticator");
+        let auth = yup_oauth2::ServiceAccountAuthenticator::builder(secret)
+            .build()
+            .await
+            .expect("Failed to build authenticator");
 
         // Pre-authenticate with all required scopes to avoid multiple OAuth prompts
         auth.token(&[
@@ -66,7 +62,6 @@ impl SheetManager {
         Ok(result.1.values.unwrap_or_default())
     }
 
-    #[allow(unused)]
     pub async fn write(
         &self,
         range: &str,
@@ -88,6 +83,7 @@ impl SheetManager {
         Ok(())
     }
 
+    #[allow(unused)]
     pub async fn append(
         &self,
         range: &str,

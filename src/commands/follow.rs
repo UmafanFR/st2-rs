@@ -21,13 +21,16 @@ pub async fn follow(
         return Err(format!("You are already following **{}**!", umamusume).into());
     }
 
+    let row_number = umasheet::get_first_empty_row().await?;
+    let range = format!("Membres!A{}:B{}", row_number, row_number);
+
     let row = vec![vec![
         serde_json::json!(username),
         serde_json::json!(umamusume),
     ]];
 
     sheet::sheet()
-        .append("Membres!A:B", row)
+        .write(&range, row)
         .await
         .map_err(|e| format!("Failed to add to sheet: {}", e))?;
 

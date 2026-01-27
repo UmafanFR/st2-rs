@@ -68,3 +68,23 @@ pub async fn get_follow_range(username: &str, uma_name: &str) -> Result<Option<S
 
     Ok(None)
 }
+
+pub async fn get_first_empty_row() -> Result<usize, Error> {
+    let members = sheet::sheet()
+        .read("Membres!A:A")
+        .await
+        .map_err(|e| format!("Failed to read sheet: {}", e))?;
+
+    for (index, row) in members.iter().enumerate() {
+        let is_empty = row.is_empty()
+            || row
+                .get(0)
+                .map(|v| v.as_str().unwrap_or("").is_empty())
+                .unwrap_or(true);
+        if is_empty {
+            return Ok(index + 1);
+        }
+    }
+
+    Ok(members.len() + 1)
+}
